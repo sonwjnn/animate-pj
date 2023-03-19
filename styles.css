@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -56,7 +56,7 @@ nav a {
   animation-delay: calc(0.2s * var(--i));
 }
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -163,7 +163,7 @@ nav a::after {
 }
 
 .parallax {
-  background-image: url('./assets/img/parallax.jpg');
+  background-image: url("./assets/img/parallax.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -333,27 +333,27 @@ nav a::after {
 }
 
 .project-item:nth-child(1) {
-  background-image: url('https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=540');
+  background-image: url("https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=540");
 }
 
 .project-item:nth-child(2) {
-  background-image: url('https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/light_mode_nerddog.png');
+  background-image: url("https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/light_mode_nerddog.png");
 }
 
 .project-item:nth-child(3) {
-  background-image: url('https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/dark_mode_nerddog.png');
+  background-image: url("https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/dark_mode_nerddog.png");
 }
 
 .project-item:nth-child(4) {
-  background-image: url('./assets/img/shopee.png');
+  background-image: url("./assets/img/shopee.png");
 }
 
 .project-item:nth-child(5) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Netflix_-_English.jpg/300px-Netflix_-_English.jpg');
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Netflix_-_English.jpg/300px-Netflix_-_English.jpg");
 }
 
 .project-item:nth-child(6) {
-  background-image: url('https://mauwebsite.vn/wp-content/uploads/2020/09/landing-page-la-gi-1.jpg');
+  background-image: url("https://mauwebsite.vn/wp-content/uploads/2020/09/landing-page-la-gi-1.jpg");
 }
 
 .project-item:hover {
