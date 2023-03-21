@@ -18,3 +18,11 @@ window.onscroll = () => {
     }
   });
 };
+
+var typed = new Typed(".multi-text", {
+  strings: ["Front End Developer", "Student at HUFI"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
