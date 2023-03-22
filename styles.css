@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -40,6 +40,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
 
+.sticky {
+  border-bottom: 0.75px solid rgba(0, 0, 0, 0.2);
+}
+
 .logo {
   cursor: default;
   font-size: 25px;
@@ -66,7 +70,7 @@ nav a {
   animation-delay: calc(0.2s * var(--i));
 }
 nav a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -99,7 +103,7 @@ nav a::after {
 }
 
 .btn::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +169,7 @@ nav a::after {
 }
 
 .home-content h3:nth-of-type(2) {
-  margin-bottom: 30px;
+  height: 96px;
 }
 
 .home-img img {
@@ -194,7 +198,7 @@ nav a::after {
 }
 
 .social-media a::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -213,7 +217,7 @@ nav a::after {
 }
 
 .parallax {
-  background-image: url("./assets/img/parallax.jpg");
+  background-image: url('./assets/img/parallax.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -234,6 +238,7 @@ nav a::after {
 
 .about-content {
   max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,8 +264,7 @@ nav a::after {
 }
 
 .about-img img {
-  width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   margin-right: -20px;
   animation: floatImg 4s ease-in-out infinite;
 }
@@ -379,6 +383,7 @@ nav a::after {
 }
 
 .project h1 {
+  text-align: center;
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -410,27 +415,27 @@ nav a::after {
 }
 
 .project-item-1 {
-  background-image: url("https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=540");
+  background-image: url('https://images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=540');
 }
 
 .project-item-2 {
-  background-image: url("https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/light_mode_nerddog.png");
+  background-image: url('https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/light_mode_nerddog.png');
 }
 
 .project-item-3 {
-  background-image: url("https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/dark_mode_nerddog.png");
+  background-image: url('https://github.com/sonwjnn/nerd-dog-page/raw/master/src/assets/demo/dark_mode_nerddog.png');
 }
 
 .project-item-4 {
-  background-image: url("./assets/img/shopee.png");
+  background-image: url('./assets/img/shopee.png');
 }
 
 .project-item-5 {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Netflix_-_English.jpg/300px-Netflix_-_English.jpg");
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Netflix_-_English.jpg/300px-Netflix_-_English.jpg');
 }
 
 .project-item-6 {
-  background-image: url("https://mauwebsite.vn/wp-content/uploads/2020/09/landing-page-la-gi-1.jpg");
+  background-image: url('https://mauwebsite.vn/wp-content/uploads/2020/09/landing-page-la-gi-1.jpg');
 }
 
 .project-item:hover {
@@ -502,7 +507,7 @@ nav a::after {
 
 .contact {
   width: 100%;
-  height: 120vh;
+  height: 110vh;
   padding: 70px 10% 0;
   background-color: rgb(255, 251, 245);
   text-align: center;
@@ -656,10 +661,19 @@ input:focus {
   /* border: 3px solid var(--btn-col-primary); */
   text-decoration: none;
 }
-
 .footer-iconTop a i {
   font-size: 36px;
   color: var(--btn-col-primary);
+}
+
+.menu-icon {
+  font-size: 36px;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar.active {
+  display: flex;
 }
 
 /*Key frames*/
@@ -698,5 +712,141 @@ input:focus {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1190px) {
+  .skill-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill {
+    height: 100%;
+    padding-bottom: 120px;
+  }
+  .project {
+    padding-bottom: 250px;
+  }
+  .project-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1368px) {
+  html {
+  }
+
+  .about-content {
+    margin-left: 42px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header {
+    padding: 20px 3%;
+  }
+
+  section {
+    padding: 36px 3% 24px;
+  }
+
+  .footer {
+    padding: 24px 3%;
+  }
+  .about {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-img {
+    height: 350px;
+    width: 100%;
+  }
+
+  .about-img img {
+  }
+  .about-content {
+    margin-top: -10rem;
+  }
+
+  .home {
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    padding-bottom: 120px;
+    justify-content: flex-end;
+  }
+
+  .parallax {
+    display: none;
+  }
+
+  .home-content {
+    text-align: center;
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    gap: 0;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    display: none;
+    text-align: center;
+    box-shadow: 0 0 3px #000;
+  }
+  .navbar a {
+    padding: 24px 12px;
+    font-size: 36px;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  .navbar a::after {
+    width: 25% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+  }
+
+  .navbar a:last-child::after {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .skill {
+    padding-bottom: 120px;
+  }
+  .skill-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .project {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 150px;
+  }
+  .project-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-item {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-img img {
+    width: 100%;
+  }
+  .about-img img {
+    width: 100%;
   }
 }
