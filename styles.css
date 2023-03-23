@@ -766,6 +766,7 @@ input:focus {
   }
   .about-content {
     margin-top: -10rem;
+    margin-left: 0;
   }
 
   .home {
@@ -846,7 +847,27 @@ input:focus {
   .home-img img {
     width: 100%;
   }
+  .home-img {
+  }
+  .about {
+    height: 100%;
+  }
   .about-img img {
     width: 100%;
+  }
+  .about-content {
+    padding-bottom: 120px;
+    margin-top: 0;
+  }
+  .home {
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .contact {
+    height: 100%;
+    padding-bottom: 200px;
+  }
+  .contact form .input-box {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
